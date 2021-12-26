@@ -96,7 +96,7 @@ class SingleLinkedList:
                 n = n.ref
             n.ref = None
 
-    def delete_by_position(self,x):
+    def delete_by_value(self,x):
         if self.head == None:
             print("Linked List is Empty")
             return
@@ -124,5 +124,5 @@ obj.delete_begin()
 obj.delete_end()
 obj.Traversing()
 print("---------------------------------------")
-obj.delete_by_position(11)
+obj.delete_by_value(11)
 obj.Traversing()
